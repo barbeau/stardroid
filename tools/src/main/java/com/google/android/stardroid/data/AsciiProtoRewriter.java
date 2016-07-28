@@ -60,7 +60,7 @@ public class AsciiProtoRewriter {
   public static void main(String[] args) throws IOException {
     if (args.length != 1 || !args[0].endsWith("_R.ascii")) {
       System.out.println("Usage: AsciiToBinaryProtoWriter <inputprefix>_R.ascii");
-      System.exit(1);
+      return;
     }
 
     String inputFile = args[0];

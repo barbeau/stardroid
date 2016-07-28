@@ -107,7 +107,7 @@ public abstract class AbstractProtoWriter {
   public void run(String[] args) throws IOException {
     if (args.length != 2) {
       System.out.printf("Usage: %s <inputfile> <outputprefix>", this.getClass().getCanonicalName());
-      System.exit(1);
+      return;
     }
     args[0] = args[0].trim();
     args[1] = args[1].trim();

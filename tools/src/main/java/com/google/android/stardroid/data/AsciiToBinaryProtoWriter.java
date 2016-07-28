@@ -33,7 +33,7 @@ public class AsciiToBinaryProtoWriter {
   public static void main(String[] args) throws IOException {
     if (args.length != 1 || !args[0].endsWith(".ascii")) {
       System.out.println("Usage: AsciiToBinaryProtoWriter <inputprefix>.ascii");
-      System.exit(1);
+      return;
     }
 
     FileReader in = null;
